@@ -13,6 +13,7 @@
 		94FC22961DEC1D7500EE2277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FC22951DEC1D7500EE2277 /* Assets.xcassets */; };
 		94FC22991DEC1D7500EE2277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FC22971DEC1D7500EE2277 /* LaunchScreen.storyboard */; };
 		94FC22A11DEC1F5E00EE2277 /* SnippetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC22A01DEC1F5E00EE2277 /* SnippetData.swift */; };
+		94FC22A31DED28C400EE2277 /* TextSnippetEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC22A21DED28C400EE2277 /* TextSnippetEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		94FC22981DEC1D7500EE2277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FC229A1DEC1D7500EE2277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FC22A01DEC1F5E00EE2277 /* SnippetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnippetData.swift; sourceTree = "<group>"; };
+		94FC22A21DED28C400EE2277 /* TextSnippetEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSnippetEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				94FC22971DEC1D7500EE2277 /* LaunchScreen.storyboard */,
 				94FC229A1DEC1D7500EE2277 /* Info.plist */,
 				94FC22A01DEC1F5E00EE2277 /* SnippetData.swift */,
+				94FC22A21DED28C400EE2277 /* TextSnippetEntryViewController.swift */,
 			);
 			path = Snippets;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FC22A31DED28C400EE2277 /* TextSnippetEntryViewController.swift in Sources */,
 				94FC22911DEC1D7500EE2277 /* ViewController.swift in Sources */,
 				94FC228F1DEC1D7500EE2277 /* AppDelegate.swift in Sources */,
 				94FC22A11DEC1F5E00EE2277 /* SnippetData.swift in Sources */,
@@ -304,6 +308,7 @@
 				94FC229F1DEC1D7500EE2277 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

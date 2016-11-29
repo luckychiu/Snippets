@@ -34,7 +34,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Y8R-vA-PdI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3hj-VX-X1x"/>
                             <constraint firstAttribute="bottom" secondItem="Y8R-vA-PdI" secondAttribute="bottom" id="NyF-un-syp"/>
@@ -46,6 +46,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Text Snippet Entry View Controller-->
+        <scene sceneID="39S-Bm-FU3">
+            <objects>
+                <viewController storyboardIdentifier="textSnippetEntry" id="afS-CP-Vmo" customClass="TextSnippetEntryViewController" customModule="Snippets" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sLk-GA-d1l"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXF-du-h13"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUH-02-deo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-KN-tmD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="afS-CP-Vmo" id="GPv-oq-bbV"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Xaa-KN-tmD" secondAttribute="trailing" id="cRQ-bq-31E"/>
+                            <constraint firstItem="EXF-du-h13" firstAttribute="top" secondItem="Xaa-KN-tmD" secondAttribute="bottom" constant="20" id="nsh-6a-aul"/>
+                            <constraint firstItem="Xaa-KN-tmD" firstAttribute="leading" secondItem="uUH-02-deo" secondAttribute="leading" id="oJn-RN-avH"/>
+                            <constraint firstItem="Xaa-KN-tmD" firstAttribute="top" secondItem="sLk-GA-d1l" secondAttribute="bottom" constant="8" id="ryV-x7-MMD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Xaa-KN-tmD" id="cjz-Le-7rb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBl-7J-ffS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="36"/>
         </scene>
     </scenes>
 </document>
