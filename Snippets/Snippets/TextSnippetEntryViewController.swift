@@ -11,6 +11,8 @@ import UIKit
 
 class TextSnippetEntryViewController: UIViewController {
     
+    var saveText: (_ text: String) -> Void = { (text: String) in }
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -35,6 +37,7 @@ class TextSnippetEntryViewController: UIViewController {
 extension TextSnippetEntryViewController: UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        saveText(textView.text)
         dismiss(animated: true, completion: nil)
     }
 }
